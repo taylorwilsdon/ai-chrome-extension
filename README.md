@@ -30,11 +30,12 @@ The AI Chrome Extension is a browser extension for Chrome that allows you to qui
 
 2. **Configure the Endpoint**:
    - Click the gear icon in the extension popup.
+   - If running open-webui locally, http://localhost:3000 would be your endpoint.
    - Enter your desired chat endpoint URL.
    - Click "Save" to apply the changes.
 
 ## Contributing
-Contributions are welcome! Please follow these steps to contribute:
+Contributions are welcome but it really ain't all that. Feel free to steal and do whatever you please. If you do want to contribute for some reason, please follow these steps to contribute:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and commit them.
@@ -42,4 +43,4 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Open a pull request to the main repository.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License. Do with it as you please! 
