@@ -1,9 +1,11 @@
 // Handle search icon click
+const defaultBaseUrl = 'https://chatgpt.com';
+
 document.getElementById('searchIcon').addEventListener('click', function () {
   const searchInput = document.getElementById('searchInput').value.trim();
   if (searchInput) {
     chrome.storage.sync.get(['endpoint'], function (result) {
-      const baseUrl = result.endpoint || 'https://example.com'; // Default fallback
+      const baseUrl = result.endpoint || defaultBaseUrl; // Default fallback
       const queryParam = encodeURIComponent(searchInput);
       const searchUrl = `${baseUrl}?q=${queryParam}`;
       chrome.tabs.create({ url: searchUrl });
@@ -17,7 +19,7 @@ document.getElementById('searchInput').addEventListener('keydown', function (e) 
     const searchInput = this.value.trim();
     if (searchInput) {
       chrome.storage.sync.get(['endpoint'], function (result) {
-        const baseUrl = result.endpoint || 'https://example.com'; // Default fallback
+        const baseUrl = result.endpoint || defaultBaseUrl; // Default fallback
         const queryParam = encodeURIComponent(searchInput);
         const searchUrl = `${baseUrl}?q=${queryParam}`;
         chrome.tabs.create({ url: searchUrl });
@@ -55,6 +57,6 @@ chrome.storage.sync.get(['endpoint'], function (result) {
   if (result.endpoint) {
     document.getElementById('endpointInput').value = result.endpoint;
   } else {
-    document.getElementById('endpointInput').value = 'https://example.com';
+    document.getElementById('endpointInput').value = defaultBaseUrl;
   }
 });

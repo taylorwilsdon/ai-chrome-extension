@@ -1,7 +1,7 @@
 # AI Chrome Extension
 
 ## Overview
-The AI Chrome Extension is a browser extension for Chrome that allows you to quickly start a chat session using a keyboard shortcut (`Cmd+Shift+O`). The chat endpoint can be configured via a settings interface accessible by clicking the gear icon in the extension popup.
+This little project is a manifest v3 compatible browser extension for Chrome that allows you to quickly start a chat session for the chat service of your choice (mine is [open-webui](https://github.com/open-webui/open-webui/releases)) using a keyboard shortcut (`Cmd+Shift+O`). The chat endpoint can be configured via a settings interface accessible by clicking the gear icon in the extension popup.
 
 ## Features
 - **Keyboard Shortcut**: Start a chat session with `Cmd+Shift+O`.
