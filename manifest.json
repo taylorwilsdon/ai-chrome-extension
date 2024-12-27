@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "open-webui quick chat",
+  "version": "1.0",
+  "description": "Quickstart a chat with your open-webui instance, press cmd+shift+o to activate",
+  "icons": {
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Ctrl+Shift+O"
+      },
+      "description": "Open search input"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

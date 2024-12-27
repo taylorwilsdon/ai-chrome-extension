@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Search Section -->
+  <div class="search-container">
+    <input type="text" class="search-input" id="searchInput" placeholder="Start a chat...">
+    <span class="search-icon" id="searchIcon">&#128269;</span>
+    <span class="settings-icon" id="settingsButton">&#9881;</span>
+  </div>
+
+  <!-- Settings Section -->
+  <div class="settings-container hidden">
+    <div class="settings-container-active">
+      <div class="settings-helper-text">Enter your ChatGPT or open-webui instance address:</div>
+      <div class="input-holder-settings">
+        <input type="text" class="search-input" id="endpointInput" placeholder="https://chatgpt.com">
+      </div>
+      <button class="save-button" id="saveEndpoint">Save</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
