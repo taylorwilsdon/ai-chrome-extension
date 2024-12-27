@@ -28,6 +28,10 @@ This little project is a manifest v3 compatible browser extension for Chrome tha
 1. **Start a Chat Session**:
    - Press `Cmd+Shift+O` to open the chat interface.
 
+
+https://github.com/user-attachments/assets/1398d88f-274b-4408-858a-b9196abbd118
+
+
 2. **Configure the Endpoint**:
    - Click the gear icon in the extension popup.
    - If running open-webui locally, http://localhost:3000 would be your endpoint.
